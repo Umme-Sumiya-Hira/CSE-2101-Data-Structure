@@ -9,8 +9,8 @@ int main()
     int n = 5,firstValue;
     cout<<"Enter first index value : ";
     cin>>firstValue;
-    for(int i=n;i>0;i--){
-        arr[i]=arr[i-1];
+    for(int i=n-1;i>=0;i--){
+        arr[i+1]=arr[i];
     }
     arr[0]=firstValue;
     n++;
@@ -35,8 +35,8 @@ int main()
     int k = 3,kValue ;
     cout<<"Enter K th index value: ";
     cin>>kValue;
-    for(int i=n;i>k;i--){
-        arr[i]=arr[i-1];
+    for(int i=n-1;i>=k;i--){
+        arr[i+1]=arr[i];
     }
     arr[k]=kValue;
     n++;
