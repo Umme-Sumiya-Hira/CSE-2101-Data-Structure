@@ -13,8 +13,8 @@ struct Node *newNode(int value){
 
     return NN;
 }
-// insert after a Node
-void insertAfterNode(int givenValue, int insertValue){
+// insert after a given value
+void insertAfterValue(int givenValue, int insertValue){
     struct Node *NN= newNode(insertValue);
     struct Node *ptr;
     ptr = head;
@@ -60,7 +60,7 @@ int main(){
         }
         
     }
-    insertAfterNode(50,55);
+    insertAfterValue(50,55);
     traverse();
     
 
